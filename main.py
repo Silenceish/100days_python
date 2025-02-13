@@ -17,6 +17,10 @@ computer = Paddle()
 player.start(PLAYER_START)
 computer.start(COMP_START)
 
+screen.listen()
+screen.onkey(key="w", fun=player.up)
+screen.onkey(key="s", fun=player.down)
+
 
 game = True
 
